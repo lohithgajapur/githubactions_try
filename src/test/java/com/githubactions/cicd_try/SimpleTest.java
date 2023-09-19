@@ -21,7 +21,8 @@ public class SimpleTest {
 		oc.addArguments("--headless");
 		//System.setProperty("webdriver.chrome.driver", "G:\\Java_Software_Latest_version\\2.4 chrome driver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver(oc); 
-		driver.get("https://google.com/");
+		driver.get("https://daaz.com/");
+		System.out.println("firstprint title: " +driver.getTitle());
 	}
 
 }
