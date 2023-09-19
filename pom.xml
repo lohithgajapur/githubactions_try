@@ -13,8 +13,11 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-  
-  <build>
+
+  <profiles>
+    <profile>
+      <id>cdtest</id>	
+      <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -27,10 +30,11 @@
                 </configuration>
             </plugin>
         </plugins>
-    </build>
-
+     </build>
+   </profile>
+  </profiles>
+	
   <dependencies>
-   
 	<dependency>
 	    <groupId>org.testng</groupId>
 	    <artifactId>testng</artifactId>
@@ -48,7 +52,6 @@
 	    <groupId>org.seleniumhq.selenium</groupId>
 	    <artifactId>selenium-java</artifactId>
 	    <version>4.10.0</version>
-	</dependency>
-    
+	</dependency>    
   </dependencies>
 </project>
