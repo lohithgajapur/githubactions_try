@@ -14,11 +14,11 @@ public class AppiumTestTry {
     capabilities.setCapability("deviceName","Android Emulator");
     capabilities.setCapability("appPackage","com.android.chrome");
     capabilities.setCapability("appActivity","com.google.android.apps.chrome.Main");
-    capabilities.setCapability(“browsername”,“chrome”);
+    capabilities.setCapability("browsername", "chrome");
     capabilities.setCapability("automationName", "UiAutomator2");
     capabilities.setCapability("avdArgs", "-no-window");
 
-    AppiumDriver driver=new AppiumDriver(new URL("http://127.0.0.1:4725/wd/hub"), capabilities);
+    AppiumDriver driver = new AppiumDriver(new URL("http://127.0.0.1:4725/wd/hub"), capabilities);
     driver.get("https://amazon.in/");
     System.out.println("Amazon title: " +driver.getTitle());
     
