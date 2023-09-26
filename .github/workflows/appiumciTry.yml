@@ -19,10 +19,13 @@ jobs:
        appium &>/dev/null &
        echo "appium after msg"
 
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v3
+
     - name: open Android Emulator 
       uses: reactivecircus/android-emulator-runner@v2
       with:
-        api-level: 31
+        api-level: 29
         script: mvn clean test -Papptest
 
     - name: reporting
