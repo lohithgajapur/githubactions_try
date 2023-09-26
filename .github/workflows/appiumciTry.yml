@@ -35,7 +35,7 @@ jobs:
     - name: open Android Emulator 
       uses: reactivecircus/android-emulator-runner@v2
       with:
-        api-level: 32
+        api-level: 31
         script: mvn clean test -Papptest
 
     - name: reporting
