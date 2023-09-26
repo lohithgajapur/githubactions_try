@@ -4,11 +4,10 @@ import org.testng.annotations.Test;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.AppiumDriver;
 
-public class AppiumTestTry(){
+public class AppiumTestTry {
 
   @Test
   public void cicdAppiumTry(){
-
     DesiredCapabilities capabilities = new DesiredCapabilities();
     capabilities.setCapability("platformName","Android");
     capabilities.setCapability("appWaitDuration","20000");
