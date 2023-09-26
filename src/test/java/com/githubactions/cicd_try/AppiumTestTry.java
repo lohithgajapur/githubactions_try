@@ -10,6 +10,7 @@ public class AppiumTestTry {
 
   @Test
   public void cicdAppiumTry() throws Exception {
+    System.out.println("Hello Lohith!!!");
     DesiredCapabilities capabilities = new DesiredCapabilities();
     capabilities.setCapability("platformName","Android");
     capabilities.setCapability("appWaitDuration","20000");
