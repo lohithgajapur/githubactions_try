@@ -14,7 +14,7 @@ jobs:
     - name: install appium 
       run: |
        echo "Appium install started msg"
-       npm install -g appium@1.8.1
+       npm install -g appium@1.18.3
        appium -v
        appium &>/dev/null &
        echo "appium after msg"
