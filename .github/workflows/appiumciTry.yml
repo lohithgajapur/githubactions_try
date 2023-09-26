@@ -29,6 +29,9 @@ jobs:
     - name: Setup Android SDK
       uses: android-actions/setup-android@v3
 
+    - name: setup Android root
+      run: sdkmanager "system-images;android-31;default;x86_64"
+
     - name: open Android Emulator 
       uses: reactivecircus/android-emulator-runner@v2
       with:
