@@ -13,13 +13,13 @@ public class AppiumTestTry {
     System.out.println("Hello Lohith!!!");
     DesiredCapabilities capabilities = new DesiredCapabilities();
     capabilities.setCapability("platformName","Android");
-    capabilities.setCapability("appWaitDuration","20000");
+    capabilities.setCapability("appWaitDuration","2000");
     capabilities.setCapability("deviceName","emulator-5554");
-    capabilities.setCapability("appPackage","com.android.settings");
-    capabilities.setCapability("appActivity","com.android.settings.SubSettings");
+    capabilities.setCapability("appPackage","com.android.messaging");
+    capabilities.setCapability("appActivity","com.android.messaging.ui.conversationlist.ConversationListActivity");
     //capabilities.setCapability("browsername", "chrome");
-    capabilities.setCapability("automationName", "UiAutomator2");
-    //capabilities.setCapability("avdArgs", "-no-window");
+    //capabilities.setCapability("automationName", "UiAutomator2");
+    capabilities.setCapability("avdArgs", "-no-window");
 
     AppiumDriver driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
     //driver.get("https://amazon.in/");
