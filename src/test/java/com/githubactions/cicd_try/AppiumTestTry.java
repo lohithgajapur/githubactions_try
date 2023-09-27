@@ -21,7 +21,7 @@ public class AppiumTestTry {
     capabilities.setCapability("automationName", "UiAutomator2");
     //capabilities.setCapability("avdArgs", "-no-window");
 
-    AppiumDriver driver = new AppiumDriver(new URL("http://127.0.0.1:4725/wd/hub"), capabilities);
+    AppiumDriver driver = new AppiumDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
     //driver.get("https://amazon.in/");
     System.out.println("Amazon title: " +driver.getTitle());
     
