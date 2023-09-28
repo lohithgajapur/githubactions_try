@@ -39,6 +39,7 @@ jobs:
         script: |
           adb devices
           echo "Will start running appium Tests"
+          adb shell pm list packages
           mvn clean test -Papptest
       
     - name: reporting
