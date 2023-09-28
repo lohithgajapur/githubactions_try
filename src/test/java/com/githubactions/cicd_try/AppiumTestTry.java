@@ -16,7 +16,7 @@ public class AppiumTestTry {
     capabilities.setCapability("appWaitDuration","2000");
     capabilities.setCapability("deviceName","emulator-5554");
     capabilities.setCapability("appPackage","com.android.messaging");
-    capabilities.setCapability("appActivity","com.android.messaging.ui.conversationlist.ConversationListActivity");
+    capabilities.setCapability("appActivity","com.android.messaging.ui.conversation.ConversationActivity");
     //capabilities.setCapability("browsername", "chrome");
     //capabilities.setCapability("automationName", "UiAutomator2");
     capabilities.setCapability("avdArgs", "-no-window");
